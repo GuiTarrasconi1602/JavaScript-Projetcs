@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calcule seu IMC</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="corpo">
+
+  <section class="container">
+    <h1 class="titulo">Sua imagem está em modo paisagem?</h1>
+    <form action="/" id="formulario" method="POST">
+      <label class="texto" for="LarguraImagem">Largura Imagem: </label>
+      <input class="campo" type="text" id="LarguraImagem" name="LarguraImagem"> <br>
+      <label class="texto" for="AlturaImagem">Altura Imagem: </label>
+      <input class="campo"type="text" id="AlturaImagem" name="AlturaImagem"> <br><br>
+      <button class="botao" type="submit">Enviar</button>
+    </form>
+
+    <br><div class="resultado" id="resultado"></div>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

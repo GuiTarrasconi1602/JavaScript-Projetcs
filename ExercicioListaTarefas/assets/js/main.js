@@ -2,7 +2,7 @@ const inputTask = document.querySelector('.input-task')
 const btnNewTask = document.querySelector('.btn-new-task')
 const ULTasks = document.querySelector('.ul-tasks')
 
-
+// =========== LISTENER ===========
 inputTask.addEventListener('keypress', function(e) {
     if (e.keyCode === 13) {
         if (!inputTask.value) return
@@ -22,6 +22,7 @@ document.addEventListener('click', function(e) {
     saveTaskList();
 });
 
+// =========== FUNCTIONS ===========
 function createTask(TaskValue) {
 const liTag = createTag('li');
 liTag.innerText = TaskValue
@@ -54,7 +55,6 @@ function addRemoveBTN(li) {
 function saveTaskList() {
     const liTasks = ULTasks.querySelectorAll('li')
     const TasksList = [];
-
     for (let task of liTasks){
         let textTasks = task.innerText;
         textTasks = textTasks.replace('Remove', '').trim();
@@ -69,7 +69,6 @@ function saveTaskList() {
 function loadTaskList(){
     const tasks = localStorage.getItem('tasks');
     const taskList = JSON.parse(tasks);
-
     for(let task of taskList) {
         createTask(task);
     }

@@ -1,0 +1,28 @@
+.container {
+  max-width: 840px;
+  margin: 50px auto;
+  background: rgb(83, 159, 212);
+  padding: 20px;
+  border-radius: 10px;
+}
+.corpo {
+  background-color: rgb(3, 6, 49);
+}
+.texto{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.titulo{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+.resultado {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
